@@ -40,7 +40,7 @@ class BaseController extends Controller
         ];
 
         if (!empty($errorMessages)) {
-            $response['dara'] = $errorMessages;
+            $response['data'] = $errorMessages;
         }
 
         return response()->json($response, $code);
